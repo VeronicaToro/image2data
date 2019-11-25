@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 def rgb2gray(rgb):
     return np.dot(rgb[...,:3], [0.2989, 0.5870, 0.1140])
 
-class image2data():
+class i2d:
     
     def __init__(self, f):
         self.file = f
