@@ -3,15 +3,15 @@ Python library to extract data from image.
 
 You should first pre-process the image in order to obtain only the plot you are interested in. For instance, in the following Figure, if you are only interested in the middle plot (395 nm), you should clean all the other data from the image.
 
-![Screenshot](example.png)
+![](example.png)
 
 So that it looks like the following Figure.
 
-![Screenshot](image1.jpg)
+![](image1.jpg)
 
 The function takes the image and coverts it to a gray scale image. The histogram of the resulting image is used to determine the color of the pixels in the plot, which are the ones we interested in. The algorithm then iterates over all the pixels in the image and returns the (x, y) coordinates of the 'darkest' pixels. The following figures show an example of an input image (left) and the plot of the output (right).
 
-![Screenshot](image2.jpg) ![Screenshot](output_example.jpg)
+![](image2.jpg) ![](output_example.png)
 
 # How to use the module
 
